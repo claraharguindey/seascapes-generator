@@ -1,7 +1,7 @@
 # seascapes
   🌅 AI horizon sea generator made with StyleGAN/Runway and P5.js.
 
-  Requires Runway to function. Download here: 💥 🔥 🌪 🌈 runwayml.com  💗 💖
+  Requires Runway to function. Download here [ 💥 🔥 🌪 🌈runwayml.com💗 💖](runwayml.com)  
 
   ![seascapes morphing gif](./visuals/seascape-gif.gif)
   
