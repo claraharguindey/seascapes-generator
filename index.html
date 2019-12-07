@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
-    <meta charset="utf-8"/>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-      <header>
-          AI seascapes made with StyleGAN. Requires <a class="link" href="https://runwayml.com" target="_blanck">RunwayML</a> to function. Check my model <a class="link" href="https://open-app.runwayml.com/?model=claraharguindey/seascapes" target="_blanck">here</a>.
-        </header>
-  
-    <script src="sketch.js"></script>
-
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>seascapes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="text-header">
+            AI seascapes made with StyleGAN. Check my model <a class="link-header" href="https://open-app.runwayml.com/?model=claraharguindey/seascapes" target="_blanck">here</a>
+    </header>
+    <main class="video">
+        <video width="450" height="450" autoplay muted loop>
+            <source src="./videos/horizonte-mar.mp4" type="video/mp4">
+        </video>
+        <article>
+            <p class="text">
+                Hiroshi Sugimoto dice que cuando mira el mar siente que visita su casa ancestral. Esto sugiere que la línea que forma el mar en el horizonte es la visión terrestre que menos ha cambiado en la historia - la visión más compartida entre generaciones. Lo que yo veo al mirar el horizonte desde la playa es lo mismo que pudieron ver mis abuelos y mis padres. El siguiente paso lógico en esta cadena es preguntarse ¿cómo lo ven las máquinas?
+                Tu máquina puede generar nuevas visiones de horizontes mar <a class="link-text" href="./generator/main.html" target="_blanck">aquí</a>.
+            </p>  
+            <span class="text">--</span>
+            <p class="text"> Hiroshi Sugimoto says that when he looks at the sea he feels that he visits his ancestral home. This suggests that the line drwan by the sea on the horizon is the terrestrial vision that has changed the least in history - the most shared vision among generations. What I see when looking at the horizon from the beach is the same thing my grandparents and my parents could see. The next logical step in this chain is to ask how do the machines see it?
+            Your machine can generate new seascapes views <a class="link-text"  href="./generator/main.html" target="_blanck">here</a>.
+            </p>
+        </article>
+    </main>
+</body>
 </html>

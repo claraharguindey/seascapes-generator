@@ -19,19 +19,17 @@ header {
     max-width: 210px;
 }
 
-.link {
-    color:#0A367C;
-}
 
 canvas {
     margin-bottom: 20px;
 }
 
 button {
-    background-color:#b8b8b8;
+    background-color:#ffffff;
+    color:#0A367C;
     border: none;
-    padding: 10px;
-    width: 50px;
+    font-size: 16px;
+    width: 20px;
     transition: all 0.5s;
     outline: none;
 }
@@ -41,11 +39,42 @@ button:focus {
 }
 
 button:hover{
-    background-color: rgb(31, 31, 31);
+    font-weight: bold;
     cursor: pointer;
 }
 
 button:active {
-    background-color: #b8b8b8;
     transform: translateY(4px);
+}
+
+.link-text{
+    color:#0A367C;
+}
+
+.link-header {
+    color:rgb(121, 121, 121);
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    color:#0A367C;
+    font-size: 14px;
+}
+
+.text-header {
+    font-size: 14px;
+    color:rgb(121, 121, 121);
+}
+
+@media (max-width: 600px) {
+    article {
+        max-width: 350px;
+        margin-left: 50px;
+    }
 }
