@@ -19,6 +19,10 @@ header {
     max-width: 210px;
 }
 
+.link {
+    color:#0A367C;
+}
+
 canvas {
     margin-bottom: 20px;
 }
