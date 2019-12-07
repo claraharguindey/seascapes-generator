@@ -1,7 +1,7 @@
 let seascape;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(450, 450);
   createButton("+").mousePressed(generateSeascape);
 }
 
