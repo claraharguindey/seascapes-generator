@@ -1,3 +1,4 @@
+* {font-family: 'Times New Roman', Times, serif;}
 html, body {
     height: 100%;
 }
@@ -9,7 +10,6 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
