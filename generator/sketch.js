@@ -25,7 +25,6 @@ function gotError(error) {
 function gotImage(result) {
   seascape = createImg(result.image);
   seascape.hide();
-  image(seascape, 0, 0);
 }
 
 function draw() {
