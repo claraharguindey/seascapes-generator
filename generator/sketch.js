@@ -30,6 +30,6 @@ function gotImage(result) {
 function draw() {
   background(220);
   if (seascape) {
-    image(seascape, 0, 0);
+    image(seascape, 0, 0, 450, 450);
   }
 }
