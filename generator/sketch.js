@@ -10,12 +10,23 @@ function generateSeascape() {
   for (let i = 0; i < 512; i++) {
     z[i] = random(-1, 1);
   }
-  const path = "http://localhost:8000/query";
-  const data = {
+
+  const model = new rw.HostedModel({
+    url: "https://seascapes.hosted-models.runwayml.cloud/v1/",
+  });
+
+  const inputs = {
     z: z,
     truncation: 0.8
   };
-  httpPost(path, "json", data, gotImage, gotError);
+  
+  model.info().then(info => console.log('info', info));
+
+  model.query(inputs).then(outputs => {
+    const { image } = outputs;
+    gotImage(image);
+  });
+
 }
 
 function gotError(error) {
@@ -23,7 +34,7 @@ function gotError(error) {
 }
 
 function gotImage(result) {
-  seascape = createImg(result.image);
+  seascape = createImg(result);
   seascape.hide();
 }
 
