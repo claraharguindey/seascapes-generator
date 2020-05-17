@@ -3,6 +3,7 @@ let seascape;
 function setup() {
   createCanvas(450, 450);
   createButton("+").mousePressed(generateSeascape);
+  generateSeascape();
 }
 
 function generateSeascape() {
@@ -19,8 +20,8 @@ function generateSeascape() {
     z: z,
     truncation: 0.8
   };
-  
-  model.info().then(info => console.log('info', info));
+
+  // model.info().then(info => console.log('info', info));
 
   model.query(inputs).then(outputs => {
     const { image } = outputs;
