@@ -13,7 +13,7 @@ function generateSeascape() {
   }
 
   const model = new rw.HostedModel({
-    url: "https://seascapes.hosted-models.runwayml.cloud/v1/",
+    url: "https://seascapes.hosted-models.runwayml.cloud/v1",
   });
 
   const inputs = {

@@ -1,4 +1,7 @@
-* {font-family: 'Times New Roman', Times, serif;}
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 html, body {
     height: 100%;
     overflow: scroll;
